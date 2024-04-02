@@ -1,7 +1,6 @@
-package org.firstinspires.ftc.teamcode.pub
+package org.gentrifiedApps.velocityvision.moa
 
-import android.graphics.Rect
-import org.firstinspires.ftc.teamcode.pub.builderInterfaces.ObjectDetectionBuilder
+import org.gentrifiedApps.velocityvision.moa.builderInterfaces.ObjectDetectionBuilder
 import org.opencv.core.Scalar
 
 /**

@@ -13,3 +13,5 @@ Nsrc/main/java/org/gentrifiedApps/velocityvision/moa/MeanColorOfAreaDetector.kt
 `src/main/java/org/gentrifiedApps/velocityvision/moa/builderInterfaces/AssumedDetectionBuilder.kt,5/5/552e63af26c0be4753b3c7c91d3a0f8509bddd92
 è
 _src/main/java/org/gentrifiedApps/velocityvision/moa/builderInterfaces/ObjectDetectionBuilder.kt,9/4/94d4f3d01a05c300f90412eaaf981da13155a0a0
+{
+Ksrc/main/java/org/gentrifiedApps/velocityvision/moa/tests/demoAutoJava.java,7/6/7612a3d05d9508b745c894127327fba349880ea9

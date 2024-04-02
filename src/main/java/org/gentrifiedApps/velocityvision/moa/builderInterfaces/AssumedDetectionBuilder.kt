@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.pub.builderInterfaces
+package org.gentrifiedApps.velocityvision.moa.builderInterfaces
 
 interface AssumedDetectionBuilder {
     val name: String

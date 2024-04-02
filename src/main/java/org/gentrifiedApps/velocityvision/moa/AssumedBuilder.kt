@@ -1,6 +1,6 @@
-package org.firstinspires.ftc.teamcode.pub
+package org.gentrifiedApps.velocityvision.moa
 
-import org.firstinspires.ftc.teamcode.pub.builderInterfaces.AssumedDetectionBuilder
+import org.gentrifiedApps.velocityvision.moa.builderInterfaces.AssumedDetectionBuilder
 
 class AssumedBuilder(
     override val name: String,

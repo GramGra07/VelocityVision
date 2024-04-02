@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.pub
+package org.gentrifiedApps.velocityvision.moa
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
@@ -6,17 +6,16 @@ import org.firstinspires.ftc.robotcore.external.function.Consumer
 import org.firstinspires.ftc.robotcore.external.function.Continuation
 import org.firstinspires.ftc.robotcore.external.stream.CameraStreamSource
 import org.firstinspires.ftc.robotcore.internal.camera.calibration.CameraCalibration
-import org.firstinspires.ftc.teamcode.pub.DetectionExtensions.first
-import org.firstinspires.ftc.teamcode.pub.DetectionExtensions.second
-import org.firstinspires.ftc.teamcode.pub.builderInterfaces.AssumedDetectionBuilder
 import org.firstinspires.ftc.vision.VisionProcessor
+import org.gentrifiedApps.velocityvision.moa.DetectionExtensions.first
+import org.gentrifiedApps.velocityvision.moa.DetectionExtensions.second
+import org.gentrifiedApps.velocityvision.moa.builderInterfaces.AssumedDetectionBuilder
 import org.opencv.android.Utils
 import org.opencv.core.Core
 import org.opencv.core.Mat
 import org.opencv.core.Point
 import org.opencv.core.Scalar
 import org.opencv.imgproc.Imgproc
-import java.util.Collections.list
 import java.util.concurrent.atomic.AtomicReference
 
 class MeanColorOfAreaDetector(
@@ -33,7 +32,7 @@ class MeanColorOfAreaDetector(
     private val assumption: AssumedBuilder
 
     init {
-        this.builders  = listOf(builder, builder2)
+        this.builders = listOf(builder, builder2)
         this.assumption = assumption
     }
 

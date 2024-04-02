@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.pub
+package org.gentrifiedApps.velocityvision.moa
 
 object DetectionExtensions {
     fun List<DetectionBuilder>.first(): DetectionBuilder {

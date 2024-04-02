@@ -6,18 +6,18 @@ import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.robotcore.external.hardware.camera.WebcamName;
-import org.firstinspires.ftc.teamcode.pub.AssumedBuilder;
-import org.firstinspires.ftc.teamcode.pub.DetectionBuilder;
-import org.firstinspires.ftc.teamcode.pub.MeanColorOfAreaDetector;
 import org.firstinspires.ftc.vision.VisionPortal;
+import org.gentrifiedApps.velocityvision.moa.AssumedBuilder;
+import org.gentrifiedApps.velocityvision.moa.DetectionBuilder;
+import org.gentrifiedApps.velocityvision.moa.MeanColorOfAreaDetector;
 import org.opencv.core.Point;
 import org.opencv.core.Rect;
 import org.opencv.core.Scalar;
 
 @Autonomous
 public class demoAutoJava extends LinearOpMode {
-    private MeanColorOfAreaDetector pubProcessor;
     VisionPortal visionPortal;
+    private MeanColorOfAreaDetector pubProcessor;
 
     @Override
     public void runOpMode() {
@@ -25,7 +25,8 @@ public class demoAutoJava extends LinearOpMode {
                 new DetectionBuilder(
                         new Rect(new Point(120.0, 50.0), new Point(230.0, 150.0)), "left",
                         new Scalar(0.0, 140.0, 0.0),
-                        new Scalar(255.0, 255.0, 255.0), () -> {}
+                        new Scalar(255.0, 255.0, 255.0), () -> {
+                }
                 ),
                 new DetectionBuilder(
                         new Rect(new Point(570.0, 70.0), new Point(680.0, 170.0)), "right",
@@ -33,7 +34,8 @@ public class demoAutoJava extends LinearOpMode {
                         new Scalar(255.0, 255.0, 255.0), () -> {
                 }
                 ),
-                new AssumedBuilder("middle", () -> {})
+                new AssumedBuilder("middle", () -> {
+                })
         );
         VisionPortal.Builder builder = new VisionPortal.Builder();
         builder.setCamera(hardwareMap.get(WebcamName.class, "Webcam 1"))
