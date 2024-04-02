@@ -22,7 +22,7 @@ class MeanColorOfAreaDetector(
     builder: DetectionBuilder,
     builder2: DetectionBuilder,
     assumption: AssumedBuilder
-) : VisionProcessor, CameraStreamSource { //var alliance: Alliance
+) : VisionProcessor, CameraStreamSource {
 
     private val lastFrame = AtomicReference(Bitmap.createBitmap(1, 1, Bitmap.Config.RGB_565))
     private var ycrcbMat = Mat()
