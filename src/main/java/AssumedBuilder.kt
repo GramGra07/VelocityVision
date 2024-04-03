@@ -1,6 +1,4 @@
-package org.gentrifiedApps.velocityvision.moa
-
-import org.gentrifiedApps.velocityvision.moa.builderInterfaces.AssumedDetectionBuilder
+import builderInterfaces.AssumedDetectionBuilder
 
 class AssumedBuilder(
     override val name: String,

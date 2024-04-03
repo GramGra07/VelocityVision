@@ -1,5 +1,3 @@
-package org.gentrifiedApps.velocityvision.moa
-
 object DetectionExtensions {
     fun List<DetectionBuilder>.first(): DetectionBuilder {
         return this[0]

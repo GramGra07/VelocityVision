@@ -1,5 +1,3 @@
-package org.gentrifiedApps.velocityvision.moa
-
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import org.firstinspires.ftc.robotcore.external.function.Consumer
@@ -7,9 +5,9 @@ import org.firstinspires.ftc.robotcore.external.function.Continuation
 import org.firstinspires.ftc.robotcore.external.stream.CameraStreamSource
 import org.firstinspires.ftc.robotcore.internal.camera.calibration.CameraCalibration
 import org.firstinspires.ftc.vision.VisionProcessor
-import org.gentrifiedApps.velocityvision.moa.DetectionExtensions.first
-import org.gentrifiedApps.velocityvision.moa.DetectionExtensions.second
-import org.gentrifiedApps.velocityvision.moa.builderInterfaces.AssumedDetectionBuilder
+import DetectionExtensions.first
+import DetectionExtensions.second
+import builderInterfaces.AssumedDetectionBuilder
 import org.opencv.android.Utils
 import org.opencv.core.Core
 import org.opencv.core.Mat

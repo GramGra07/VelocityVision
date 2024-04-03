@@ -1,4 +1,4 @@
-package org.gentrifiedApps.velocityvision.moa.builderInterfaces
+package builderInterfaces
 
 interface AssumedDetectionBuilder {
     val name: String
