@@ -1,34 +1,6 @@
 
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-u
-Esrc/main/java/org/gentrifiedApps/velocityvision/moa/AssumedBuilder.kt,f/6/f6f4785b8554b3b56ec98cfcfef99ccffa5d20d6
-w
-Gsrc/main/java/org/gentrifiedApps/velocityvision/moa/DetectionBuilder.kt,2/e/2e97919c3f48a55f1c0e0253d2251e2ddf69459e
-z
-Jsrc/main/java/org/gentrifiedApps/velocityvision/moa/DetectionExtensions.kt,5/9/5968b647d966f8ee1ab586142e350fb4cf0a4816
-~
-Nsrc/main/java/org/gentrifiedApps/velocityvision/moa/MeanColorOfAreaDetector.kt,f/3/f363ae798051d63475a7cfc024324f515b5b4571
-ê
-`src/main/java/org/gentrifiedApps/velocityvision/moa/builderInterfaces/AssumedDetectionBuilder.kt,5/5/552e63af26c0be4753b3c7c91d3a0f8509bddd92
-è
-_src/main/java/org/gentrifiedApps/velocityvision/moa/builderInterfaces/ObjectDetectionBuilder.kt,9/4/94d4f3d01a05c300f90412eaaf981da13155a0a0
-{
-Ksrc/main/java/org/gentrifiedApps/velocityvision/moa/tests/demoAutoJava.java,7/6/7612a3d05d9508b745c894127327fba349880ea9
-X
-(src/main/java/MeanColorOfAreaDetector.kt,d/6/d6e1965d02f4b979761bd454fb494653ca9f168f
-T
-$src/main/java/DetectionExtensions.kt,3/4/34695c26d387dfc43d63a02f5f4dfb8b6440caaf
-O
-src/main/java/AssumedBuilder.kt,6/4/646739a45c777b8aa1ff30a7e877996369a91aa7
-Q
-!src/main/java/DetectionBuilder.kt,0/7/0743ea7e9614d2113a33d79be45a747d01dd818f
-U
-%src/main/java/tests/demoAutoJava.java,b/5/b5f3c5b32a98934505bbdb8a6ccf924c9038529c
-j
-:src/main/java/builderInterfaces/AssumedDetectionBuilder.kt,a/4/a4164210c8f7c2ba395b6be390fbab16b96c2727
-i
-9src/main/java/builderInterfaces/ObjectDetectionBuilder.kt,1/9/196b8be6f2fa77f744c9abfed4612a83986998c4
 v
 Fsrc/main/java/org/gentrifiedApps/velocityvision/DetectionExtensions.kt,1/f/1fed37fefd67bb5f3686339356e9cac60f4fe8fa
 s
@@ -107,3 +79,5 @@ G.idea/sonarlint/issuestore/1/9/196b8be6f2fa77f744c9abfed4612a83986998c4,e/f/ef
 Q.idea/sonarlint/securityhotspotstore/d/c/dc290d313d55047d0cc4708c0582dbff0bc522ba,f/f/ffa711f71b4b2a970beaed296a922172ee0c3dc4
 Å
 Q.idea/sonarlint/securityhotspotstore/0/2/02edb08bc67d06fe70319cdbbe97077f4fdd945b,4/7/47398e8101c4b353f139515461c8a176eaed629f
+X
+(gradle/wrapper/gradle-wrapper.properties,f/b/fbe448ebfc3eb2d4e308f6b8b043666f5b57235e
