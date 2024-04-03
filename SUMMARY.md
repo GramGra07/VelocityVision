@@ -2,6 +2,7 @@
 
 * [Velocity Vision](README.md)
 * [Installation Instructions](installation-instructions.md)
+* [Vision Portal](vision-portal.md)
 
 ## Detection Pipelines
 
