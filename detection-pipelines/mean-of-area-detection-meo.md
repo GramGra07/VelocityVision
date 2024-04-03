@@ -52,19 +52,20 @@ public class testAuto extends LinearOpMode {
                 new DetectionBuilder(
                         new Rect(new Point(120.0, 50.0), new Point(230.0, 150.0)),
                         "left",
-                        new Scalar(0.0, 140.0, 0.0),()->{detectionNum = 1}
-                ) ,
+                        new Scalar(0.0, 140.0, 0.0),
+                        new Scalar(255.0, 255.0, 255.0),
+                        ()-> detectionNum = 1
+                ),
                 new DetectionBuilder(
                         new Rect(new Point(570.0, 70.0), new Point(680.0, 170.0)),
                         "right",
                         new Scalar(0.0, 140.0, 0.0),
-                        new Scalar(255.0, 255.0, 255.0),()->{ detectionNum = 2}
+                        new Scalar(255.0, 255.0, 255.0),()-> detectionNum = 2
                 ) ,
-                new AssumedBuilder("middle", ()->{detectionNum = 3}) 
-                
+                new AssumedBuilder("middle", ()-> detectionNum = 3)
         );
 
-       portal = new VisionPortal.Builder()
+        portal = new VisionPortal.Builder()
                 .setCamera(hardwareMap.get(WebcamName.class, "Webcam 1"))
                 .setCameraResolution(new Size(640, 480))
                 .addProcessor(processor)
