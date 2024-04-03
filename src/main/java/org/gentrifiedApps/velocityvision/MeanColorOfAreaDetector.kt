@@ -1,7 +1,5 @@
-package org.gentrifiedApps.velocityvision.moa.org.gentrifiedApps.velocityvision
+package org.gentrifiedApps.velocityvision
 
-import org.gentrifiedApps.velocityvision.AssumedBuilder
-import org.gentrifiedApps.velocityvision.DetectionBuilder
 import org.gentrifiedApps.velocityvision.DetectionExtensions.first
 import org.gentrifiedApps.velocityvision.DetectionExtensions.second
 import android.graphics.Bitmap
