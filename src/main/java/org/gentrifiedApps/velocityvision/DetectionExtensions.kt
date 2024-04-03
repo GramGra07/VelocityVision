@@ -1,3 +1,5 @@
+package org.gentrifiedApps.velocityvision
+
 object DetectionExtensions {
     fun List<DetectionBuilder>.first(): DetectionBuilder {
         return this[0]

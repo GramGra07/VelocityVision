@@ -1,4 +1,4 @@
-package tests;
+package org.gentrifiedApps.velocityvision.tests;
 
 import android.util.Size;
 
@@ -7,9 +7,9 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.robotcore.external.hardware.camera.WebcamName;
 import org.firstinspires.ftc.vision.VisionPortal;
-import AssumedBuilder;
-import DetectionBuilder;
-import MeanColorOfAreaDetector;
+import org.gentrifiedApps.velocityvision.AssumedBuilder;
+import org.gentrifiedApps.velocityvision.DetectionBuilder;
+import org.gentrifiedApps.velocityvision.moa.org.gentrifiedApps.velocityvision.MeanColorOfAreaDetector;
 import org.opencv.core.Point;
 import org.opencv.core.Rect;
 import org.opencv.core.Scalar;

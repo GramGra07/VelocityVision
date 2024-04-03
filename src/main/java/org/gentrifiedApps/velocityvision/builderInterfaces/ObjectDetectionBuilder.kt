@@ -1,4 +1,4 @@
-package builderInterfaces
+package org.gentrifiedApps.velocityvision.builderInterfaces
 
 import org.opencv.core.Rect
 import org.opencv.core.Scalar
