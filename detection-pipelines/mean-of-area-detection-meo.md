@@ -1,4 +1,4 @@
-# Mean of Area Detection (meo)
+# Mean of Area Detection (moa)
 
 Mean of area detection works through using rectangles you can specify, and then getting the average color over that entire area of the rectangle to determine if it should choose that "spot". For instance, in Centerstage 2023-2024, there are three spike marks. You can easily see two of them so it makes it easy to detect. In this case, you would choose which two to look at, and then assume if it isn't those, it must be the other one. We call this "assuming a third". Hence how in the pipeline we have created, there are Detection Builders and Assumed Builders.
 
@@ -14,7 +14,7 @@ This allows you to define a box that the detection will specifically look at.&#x
 
 Next, you will define a name for this detection. For instance, with my example of CenterStage earlier, it could be "left" or "center".
 
-Next you will define a lower and upper **scalar** color. This pipeline uses the **HSV** color space because I have found it to be much simpler to navigate with simple colors.
+Next you will define a lower and upper **scalar** color. This pipeline uses the **YCrCb** color space because I have found it to be much simpler to navigate with simple colors.
 
 ```java
 Scalar(255.0, 255.0, 255.0)
