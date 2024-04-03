@@ -6,4 +6,4 @@
 
 ## Detection Pipelines
 
-* [Mean of Area Detection (meo)](detection-pipelines/mean-of-area-detection-meo.md)
+* [Mean of Area Detection (moa)](detection-pipelines/mean-of-area-detection-meo.md)
