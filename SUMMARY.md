@@ -1,3 +1,7 @@
 # Table of contents
 
-* [Page](README.md)
+* [Velocity Vision](README.md)
+
+## Detection Pipelines
+
+* [Mean of Area Detection (meo)](detection-pipelines/mean-of-area-detection-meo.md)
