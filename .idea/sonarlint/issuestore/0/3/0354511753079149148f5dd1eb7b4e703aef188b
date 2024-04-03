@@ -1,5 +1,0 @@
-
-	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÄÑÖ£ùÿÿÿÿJ$5259068b-fe5b-4670-893e-77098d4d376f
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¿Á‚şÿÿÿÿ8ãêî‹ê1J$3eef213c-5751-437f-bdc1-2a34b167f280
-
-java:S1450"[Remove the "pubProcessor" field and declare it as a local variable in the relevant methods.(ø´K8š¥Í‹ê1J$75728dce-273c-497a-bdd9-38e2717f7abd
