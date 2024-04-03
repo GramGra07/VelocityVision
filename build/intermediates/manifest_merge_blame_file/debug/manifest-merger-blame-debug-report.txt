@@ -4,8 +4,8 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="24"
-6-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9233151556325673802.xml
+6-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest2874914192069896970.xml
 7        android:targetSdkVersion="28" />
-7-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest9233151556325673802.xml
+7-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest2874914192069896970.xml
 8
 9</manifest>

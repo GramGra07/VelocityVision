@@ -3,24 +3,24 @@
 3    package="org.gentrifiedApps.velocityvision.test" >
 4
 5    <uses-sdk
-5-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:5:5-74
+5-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:5:5-74
 6        android:minSdkVersion="24"
-6-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:5:15-41
+6-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:5:15-41
 7        android:targetSdkVersion="28" />
-7-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:5:42-71
+7-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:5:42-71
 8
 9    <instrumentation
-9-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:11:5-15:88
+9-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:11:5-15:88
 10        android:name="androidx.test.runner.AndroidJUnitRunner"
-10-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:11:22-76
+10-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:11:22-76
 11        android:functionalTest="false"
-11-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:14:22-52
+11-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:14:22-52
 12        android:handleProfiling="false"
-12-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:13:22-53
+12-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:13:22-53
 13        android:label="Tests for org.gentrifiedApps.velocityvision.test"
-13-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:15:22-86
+13-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:15:22-86
 14        android:targetPackage="org.gentrifiedApps.velocityvision.test" />
-14-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:12:22-84
+14-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:12:22-84
 15
 16    <uses-permission
 16-->[org.firstinspires.ftc:RobotCore:9.1.0] /Users/gradengentry/Library/Android/sdk/caches/transforms-3/5f6467adae5d3b05d7427468a8adf8f1/transformed/RobotCore-9.1.0/AndroidManifest.xml:11:5-13:35
@@ -144,7 +144,7 @@
 81-->[org.firstinspires.ftc:RobotCore:9.1.0] /Users/gradengentry/Library/Android/sdk/caches/transforms-3/5f6467adae5d3b05d7427468a8adf8f1/transformed/RobotCore-9.1.0/AndroidManifest.xml:85:19-57
 82
 83    <application
-83-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:7:5-9:19
+83-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:7:5-9:19
 84        android:name="org.firstinspires.ftc.robotcore.internal.system.RobotApplication"
 84-->[org.firstinspires.ftc:RobotCore:9.1.0] /Users/gradengentry/Library/Android/sdk/caches/transforms-3/5f6467adae5d3b05d7427468a8adf8f1/transformed/RobotCore-9.1.0/AndroidManifest.xml:87:18-97
 85        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -152,8 +152,8 @@
 86        android:debuggable="true"
 87        android:extractNativeLibs="false" >
 88        <uses-library android:name="android.test.runner" />
-88-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:8:9-60
-88-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest12781745352120199493.xml:8:23-57
+88-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:8:9-60
+88-->/Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/manifest/androidTest/debug/tempFile1ProcessTestManifest1267600543002510881.xml:8:23-57
 89        <!--
 90    Needed to support sending logs from log viewer on Nougat and later.
 91    Note: DON'T need to shift meta-data to 'androidx' from 'android.support.FILE_PROVIDER_PATHS'
