@@ -14,7 +14,9 @@ This allows you to define a box that the detection will specifically look at.&#x
 
 Next, you will define a name for this detection. For instance, with my example of CenterStage earlier, it could be "left" or "center".
 
-Next you will define a lower and upper **scalar** color. This pipeline uses the **YCrCb** color space because I have found it to be much simpler to navigate with simple colors.
+Next you will define a lower and upper **scalar** color.
+
+For color spaces, you will pass in your own color space you want to use. This uses an ENUM that is defined in this module called CSpace. You can make it use RGB, YCrCb, HSV, or HLS. For instance, if you wanted to use RGB, you would pass in CSpace.RGB.
 
 ```java
 Scalar(255.0, 255.0, 255.0)
@@ -37,6 +39,7 @@ import org.firstinspires.ftc.vision.VisionPortal;
 import org.gentrifiedApps.velocityvision.moa.AssumedBuilder;
 import org.gentrifiedApps.velocityvision.moa.DetectionBuilder;
 import org.gentrifiedApps.velocityvision.moa.MeanColorOfAreaDetector;
+import org.gentrifiedApps.velocityvision.moa.CSpace;
 import org.opencv.core.Rect;
 import org.opencv.core.Point;
 import org.opencv.core.Scalar;
@@ -49,28 +52,30 @@ public class testAuto extends LinearOpMode {
     @Override
     public void runOpMode() {
         processor = new MeanColorOfAreaDetector(
+                CSpace.RGB, // you are allowed to change this to YCrCb, HSV, or HLS
                 new DetectionBuilder(
                         new Rect(new Point(120.0, 50.0), new Point(230.0, 150.0)),
                         "left",
                         new Scalar(0.0, 140.0, 0.0),
                         new Scalar(255.0, 255.0, 255.0),
-                        ()-> detectionNum = 1
+                        ()-> detectionNum = 1 // this sets detectionNum to 1
                 ),
                 new DetectionBuilder(
-                        new Rect(new Point(570.0, 70.0), new Point(680.0, 170.0)),
+                        new Rect(new Point(570.0, 70.0), new Point(680.0, 170.0)), // this sets the rectangle
                         "right",
-                        new Scalar(0.0, 140.0, 0.0),
-                        new Scalar(255.0, 255.0, 255.0),()-> detectionNum = 2
+                        new Scalar(0.0, 140.0, 0.0), // this sets the lower bound of the color
+                        new Scalar(255.0, 255.0, 255.0), // this sets the upper bound of the color
+                        ()-> detectionNum = 2 // this adds a detection builder named right, that also sets detectionNum to 2
                 ) ,
-                new AssumedBuilder("middle", ()-> detectionNum = 3)
+                new AssumedBuilder("middle", ()-> detectionNum = 3) // this adds an assumed builder named middle, that also sets detectionNum to 3
         );
 
         portal = new VisionPortal.Builder()
-                .setCamera(hardwareMap.get(WebcamName.class, "Webcam 1"))
-                .setCameraResolution(new Size(640, 480))
-                .addProcessor(processor)
+                .setCamera(hardwareMap.get(WebcamName.class, "Webcam 1")) // set camera name
+                .setCameraResolution(new Size(640, 480)) // set the camera resolution
+                .addProcessor(processor) // add the processor we just created
                 .build();
-        waitForStart();
+        waitForStart(); // wait for start as used in opmode
     }
 }
 ```
