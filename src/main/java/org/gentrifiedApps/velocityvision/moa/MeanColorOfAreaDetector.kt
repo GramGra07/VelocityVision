@@ -38,7 +38,7 @@ class MeanColorOfAreaDetector(
         this.assumption = assumption
         this.colorSpace = colorSpace
     }
-
+   //test
     override fun init(width: Int, height: Int, calibration: CameraCalibration) {
         lastFrame.set(Bitmap.createBitmap(width, height, Bitmap.Config.RGB_565))
     }
