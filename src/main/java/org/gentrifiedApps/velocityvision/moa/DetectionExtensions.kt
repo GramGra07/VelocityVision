@@ -1,4 +1,4 @@
-package org.gentrifiedApps.velocityvision
+package org.gentrifiedApps.velocityvision.moa
 
 object DetectionExtensions {
     fun List<DetectionBuilder>.first(): DetectionBuilder {

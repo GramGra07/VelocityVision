@@ -1,6 +1,6 @@
-package org.gentrifiedApps.velocityvision
+package org.gentrifiedApps.velocityvision.moa
 
-import org.gentrifiedApps.velocityvision.builderInterfaces.ObjectDetectionBuilder
+import org.gentrifiedApps.velocityvision.moa.builderInterfaces.ObjectDetectionBuilder
 import org.opencv.core.Scalar
 
 /**

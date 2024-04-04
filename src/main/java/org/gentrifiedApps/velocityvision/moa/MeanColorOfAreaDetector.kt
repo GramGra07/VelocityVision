@@ -1,15 +1,15 @@
-package org.gentrifiedApps.velocityvision
+package org.gentrifiedApps.velocityvision.moa
 
-import org.gentrifiedApps.velocityvision.DetectionExtensions.first
-import org.gentrifiedApps.velocityvision.DetectionExtensions.second
 import android.graphics.Bitmap
 import android.graphics.Canvas
-import org.gentrifiedApps.velocityvision.builderInterfaces.AssumedDetectionBuilder
 import org.firstinspires.ftc.robotcore.external.function.Consumer
 import org.firstinspires.ftc.robotcore.external.function.Continuation
 import org.firstinspires.ftc.robotcore.external.stream.CameraStreamSource
 import org.firstinspires.ftc.robotcore.internal.camera.calibration.CameraCalibration
 import org.firstinspires.ftc.vision.VisionProcessor
+import org.gentrifiedApps.velocityvision.moa.DetectionExtensions.first
+import org.gentrifiedApps.velocityvision.moa.DetectionExtensions.second
+import org.gentrifiedApps.velocityvision.moa.builderInterfaces.AssumedDetectionBuilder
 import org.opencv.android.Utils
 import org.opencv.core.Core
 import org.opencv.core.Mat
@@ -19,21 +19,24 @@ import org.opencv.imgproc.Imgproc
 import java.util.concurrent.atomic.AtomicReference
 
 class MeanColorOfAreaDetector(
+    colorSpace: CSpace,
     builder: DetectionBuilder,
     builder2: DetectionBuilder,
     assumption: AssumedBuilder
 ) : VisionProcessor, CameraStreamSource {
 
     private val lastFrame = AtomicReference(Bitmap.createBitmap(1, 1, Bitmap.Config.RGB_565))
-    private var ycrcbMat = Mat()
+    private var colorSpaceMat = Mat()
     private var submatOne = Mat()
     private var submatTwo = Mat()
     private val builders: List<DetectionBuilder>
     private val assumption: AssumedBuilder
+    private val colorSpace: CSpace
 
     init {
         this.builders = listOf(builder, builder2)
         this.assumption = assumption
+        this.colorSpace = colorSpace
     }
 
     override fun init(width: Int, height: Int, calibration: CameraCalibration) {
@@ -49,14 +52,19 @@ class MeanColorOfAreaDetector(
                 frame, builder.rectangle.br(), builder.rectangle.tl(), Scalar(0.0, 255.0, 0.0), 1
             )
         }
-        Imgproc.cvtColor(frame, ycrcbMat, Imgproc.COLOR_RGB2YCrCb)
-        submatOne = ycrcbMat.submat(
+        when (colorSpace) {
+            CSpace.RGB -> null
+            CSpace.YCrCb -> Imgproc.cvtColor(frame, colorSpaceMat, Imgproc.COLOR_RGB2YCrCb)
+            CSpace.HSV -> Imgproc.cvtColor(frame, colorSpaceMat, Imgproc.COLOR_RGB2HSV)
+            CSpace.HLS -> Imgproc.cvtColor(frame, colorSpaceMat, Imgproc.COLOR_RGB2HLS)
+        }
+        submatOne = colorSpaceMat.submat(
             firstBuilder.rectangle
         )
-        submatTwo = ycrcbMat.submat(
+        submatTwo = colorSpaceMat.submat(
             secondBuilder.rectangle
         )
-        ycrcbMat.release()
+        colorSpaceMat.release()
         val oneMean = Core.mean(submatOne).`val`
         val twoMean = Core.mean(submatTwo).`val`
         submatOne.release()
