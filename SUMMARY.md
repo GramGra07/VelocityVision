@@ -7,3 +7,4 @@
 ## Detection Pipelines
 
 * [Mean of Area Detection (moa)](detection-pipelines/mean-of-area-detection-meo.md)
+* [Black and White Dot Detection (bow)](detection-pipelines/black-and-white-dot-detection-bow.md)

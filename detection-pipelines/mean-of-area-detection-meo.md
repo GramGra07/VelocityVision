@@ -10,7 +10,7 @@ When creating the pipeline, you will pass in two detection builders. These consi
 Rect(Point(120.0, 50.0), Point(230.0, 150.0))
 ```
 
-This allows you to define a box that the detection will specifically look at.&#x20;
+This allows you to define a box that the detection will specifically look at.
 
 Next, you will define a name for this detection. For instance, with my example of CenterStage earlier, it could be "left" or "center".
 
@@ -24,7 +24,9 @@ Scalar(255.0, 255.0, 255.0)
 
 Next, you will define a function for the program to execute when it selects this detection. A very convenient way to do this is have BlinkinLED lights and setting them to different colors depending on the detection, a very easy way to make sure it is working correctly. Another way this could be used is to set a variable to different numbers so you know which detection has been selected.
 
-For instance, a complete code module using this could look like:&#x20;
+<figure><img src="../.gitbook/assets/autoIdentifyEx.png" alt=""><figcaption><p>An example of what this kind of detection looks like in action</p></figcaption></figure>
+
+For instance, a complete code module using this could look like:
 
 ```java
 package org.firstinspires.ftc.teamcode;
