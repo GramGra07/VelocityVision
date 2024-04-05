@@ -50,7 +50,7 @@ class BlackAndWhiteDotDetector(
         submat = frame.submat(builder.rectangle)
 
         //!white
-        when (builder.color) {
+        when (dotColor) {
             DotColor.WHITE -> {
                 Imgproc.medianBlur(submat, blur, 5)
                 Imgproc.cvtColor(blur, gray, Imgproc.COLOR_BGR2GRAY)
