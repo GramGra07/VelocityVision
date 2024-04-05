@@ -36,10 +36,10 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.robotcore.external.hardware.camera.WebcamName;
 import org.firstinspires.ftc.vision.VisionPortal;
-import org.gentrifiedApps.velocityvision.moa.AssumedBuilder;
-import org.gentrifiedApps.velocityvision.moa.DetectionBuilder;
-import org.gentrifiedApps.velocityvision.moa.MeanColorOfAreaDetector;
-import org.gentrifiedApps.velocityvision.moa.CSpace;
+import org.gentrifiedApps.velocityvision.pipelines.moa.AssumedBuilder;
+import org.gentrifiedApps.velocityvision.pipelines.moa.DetectionBuilder;
+import org.gentrifiedApps.velocityvision.pipelines.moa.MeanColorOfAreaDetector;
+import org.gentrifiedApps.velocityvision.enums.CSpace;
 import org.opencv.core.Rect;
 import org.opencv.core.Point;
 import org.opencv.core.Scalar;
@@ -49,6 +49,7 @@ public class testAuto extends LinearOpMode {
     private MeanColorOfAreaDetector processor;
     private VisionPortal portal;
     private int detectionNum = 0;
+
     @Override
     public void runOpMode() {
         processor = new MeanColorOfAreaDetector(
@@ -58,16 +59,16 @@ public class testAuto extends LinearOpMode {
                         "left",
                         new Scalar(0.0, 140.0, 0.0),
                         new Scalar(255.0, 255.0, 255.0),
-                        ()-> detectionNum = 1 // this sets detectionNum to 1
+                        () -> detectionNum = 1 // this sets detectionNum to 1
                 ),
                 new DetectionBuilder(
                         new Rect(new Point(570.0, 70.0), new Point(680.0, 170.0)), // this sets the rectangle
                         "right",
                         new Scalar(0.0, 140.0, 0.0), // this sets the lower bound of the color
                         new Scalar(255.0, 255.0, 255.0), // this sets the upper bound of the color
-                        ()-> detectionNum = 2 // this adds a detection builder named right, that also sets detectionNum to 2
-                ) ,
-                new AssumedBuilder("middle", ()-> detectionNum = 3) // this adds an assumed builder named middle, that also sets detectionNum to 3
+                        () -> detectionNum = 2 // this adds a detection builder named right, that also sets detectionNum to 2
+                ),
+                new AssumedBuilder("middle", () -> detectionNum = 3) // this adds an assumed builder named middle, that also sets detectionNum to 3
         );
 
         portal = new VisionPortal.Builder()
