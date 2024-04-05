@@ -1,5 +1,3 @@
 package org.gentrifiedApps.velocityvision
 
-class mainTestOpMode {
-
-}
+class mainTestOpMode
