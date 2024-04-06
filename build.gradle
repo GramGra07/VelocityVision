@@ -18,7 +18,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 group 'org.gentrifiedApps.velocityvision'
-version 'v1.0.0'
+version 'v1.0.1'
 
 android {
     namespace 'org.gentrifiedApps.velocityvision'
@@ -38,7 +38,7 @@ android {
         //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 28
         versionCode 1
-        versionName 'v1.0.0'
+        versionName 'v1.0.1'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         signingConfig signingConfigs.debug
@@ -87,7 +87,7 @@ afterEvaluate {
             release(MavenPublication) {
                 groupId = 'org.gentrifiedApps'
                 artifactId = 'gentrifiedApps'
-                version = 'v1.0.0'
+                version = 'v1.0.1'
 
                 afterEvaluate {
                     from components.release

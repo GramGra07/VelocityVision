@@ -1,0 +1,14 @@
+org.gentrifiedApps.velocityvision.test-androidTest-0 /Users/gradengentry/Desktop/Repos/VelocityVision/build/generated/res/resValues/androidTest/debug
+org.gentrifiedApps.velocityvision.test-androidTest-1 /Users/gradengentry/Desktop/Repos/VelocityVision/build/generated/res/rs/androidTest/debug
+org.gentrifiedApps.velocityvision.test-mergeDebugAndroidTestResources-2 /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+org.gentrifiedApps.velocityvision.test-mergeDebugAndroidTestResources-3 /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+org.gentrifiedApps.velocityvision.test-merged_res-4 /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/merged_res/debugAndroidTest
+org.gentrifiedApps.velocityvision.test-packaged_res-5 /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/packaged_res/debug
+org.gentrifiedApps.velocityvision.test-androidTest-6 /Users/gradengentry/Desktop/Repos/VelocityVision/src/androidTest/res
+org.gentrifiedApps.velocityvision.test-androidTestDebug-7 /Users/gradengentry/Desktop/Repos/VelocityVision/src/androidTestDebug/res
+org.gentrifiedApps.velocityvision.test-appcompat-1.2.0-8 /Users/gradengentry/Library/Android/sdk/caches/transforms-3/33b0544ef61039c38b582ab076d4ffa5/transformed/appcompat-1.2.0/res
+org.gentrifiedApps.velocityvision.test-core-1.3.0-9 /Users/gradengentry/Library/Android/sdk/caches/transforms-3/4ef92d33caf9d18236637e197973a0ac/transformed/core-1.3.0/res
+org.gentrifiedApps.velocityvision.test-RobotCore-9.1.0-10 /Users/gradengentry/Library/Android/sdk/caches/transforms-3/5f6467adae5d3b05d7427468a8adf8f1/transformed/RobotCore-9.1.0/res
+org.gentrifiedApps.velocityvision.test-apriltag-2.0.0-11 /Users/gradengentry/Library/Android/sdk/caches/transforms-3/c38b01a406a8e47b0f5bbada2218127e/transformed/apriltag-2.0.0/res
+org.gentrifiedApps.velocityvision.test-appcompat-resources-1.2.0-12 /Users/gradengentry/Library/Android/sdk/caches/transforms-3/d0659b16363d0e395e11a7d0bc91d887/transformed/appcompat-resources-1.2.0/res
+org.gentrifiedApps.velocityvision.test-opencv-repackaged-bundled-dylibs-4.7.0-A-13 /Users/gradengentry/Library/Android/sdk/caches/transforms-3/e085af922f01c919664eef643565acd2/transformed/opencv-repackaged-bundled-dylibs-4.7.0-A/res
