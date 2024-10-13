@@ -1,3 +1,6 @@
 
 *.class
 /build
+/.idea
+/.gradle
+/build
