@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml:2:13-3:62
-INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml:2:13-3:62
-INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml:2:13-3:62
+ADDED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml:2:13-3:62
+INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml:2:13-3:62
+INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml:2:13-3:62
 	package
-		ADDED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml:3:16-59
-		INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
-		INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
+		ADDED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml:3:16-59
+		INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
+		INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
 	xmlns:android
-		ADDED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml:2:23-81
+		ADDED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml:2:23-81
 uses-sdk
-INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml reason: use-sdk injection requested
-INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
-INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
-INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
-INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
+INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml reason: use-sdk injection requested
+INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
+INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
+INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
+INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
 	android:targetSdkVersion
-		INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
-		ADDED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
-		INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
+		INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
+		ADDED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
+		INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
 	android:minSdkVersion
-		INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
-		ADDED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
-		INJECTED from /Users/gradengentry/Desktop/Repos/VelocityVision/build/intermediates/tmp/ProcessLibraryManifest/debug/tempAndroidManifest458752854178448111.xml
+		INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
+		ADDED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
+		INJECTED from C:\Users\grade\Downloads\repos\VelocityVision\build\intermediates\tmp\ProcessLibraryManifest\debug\tempAndroidManifest9762263626811580709.xml
