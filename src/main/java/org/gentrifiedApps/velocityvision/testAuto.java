@@ -13,7 +13,7 @@ import org.firstinspires.ftc.vision.VisionPortal;
 import org.gentrifiedApps.velocityvision.enums.Alliance;
 import org.gentrifiedApps.velocityvision.pipelines.sample.CameraLock;
 import org.gentrifiedApps.velocityvision.pipelines.sample.SampleDataDetector;
-@Autonomous
+//@Autonomous
 public class testAuto extends LinearOpMode {
     private SampleDataDetector processor;
     private VisionPortal portal;
