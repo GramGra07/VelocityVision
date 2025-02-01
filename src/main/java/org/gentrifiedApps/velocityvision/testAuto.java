@@ -4,10 +4,9 @@ package org.gentrifiedApps.velocityvision;
 
 import android.util.Size;
 
-import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
-import org.gentrifiedApps.velocityvision.enums.ReturnType;
+import org.gentrifiedApps.velocityvision.pipelines.sample.ReturnType;
 import org.firstinspires.ftc.robotcore.external.hardware.camera.WebcamName;
 import org.firstinspires.ftc.vision.VisionPortal;
 import org.gentrifiedApps.velocityvision.enums.Alliance;

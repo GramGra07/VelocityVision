@@ -1,12 +1,11 @@
 package org.gentrifiedApps.velocityvision
 
 import org.gentrifiedApps.velocityvision.enums.Alliance
-import org.gentrifiedApps.velocityvision.enums.DotColor
-import org.gentrifiedApps.velocityvision.enums.ReturnType
+import org.gentrifiedApps.velocityvision.pipelines.bow.DotColor
+import org.gentrifiedApps.velocityvision.pipelines.sample.ReturnType
 import org.gentrifiedApps.velocityvision.pipelines.bow.BlackAndWhiteDotDetector
 import org.gentrifiedApps.velocityvision.pipelines.bow.DotDetectionBuilder
 import org.gentrifiedApps.velocityvision.pipelines.sample.SampleDataDetector
-import org.junit.jupiter.api.Test
 import org.opencv.core.Rect
 
 class mainTestOpMode {

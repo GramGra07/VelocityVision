@@ -1,4 +1,4 @@
-package org.gentrifiedApps.velocityvision.enums
+package org.gentrifiedApps.velocityvision.pipelines.sample
 
 enum class ReturnType {
     ANGLE,
@@ -7,7 +7,7 @@ enum class ReturnType {
     companion object {
         @JvmStatic
         fun all(): List<ReturnType> {
-            return listOf(ReturnType.ANGLE, ReturnType.CENTER, ReturnType.COLOR)
+            return listOf(ANGLE, CENTER, COLOR)
         }
     }
 }

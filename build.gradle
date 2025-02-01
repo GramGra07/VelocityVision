@@ -75,10 +75,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.junit.jupiter:junit-jupiter:5.8.1'
-    implementation 'org.firstinspires.ftc:RobotCore:9.0.1'
-    implementation 'org.openftc:easyopencv:1.6.2'
-    implementation 'org.firstinspires.ftc:Vision:9.1.0'
+    implementation 'org.firstinspires.ftc:RobotCore:10.2.0'
+    implementation 'org.openftc:easyopencv:1.7.3'
+    implementation 'org.firstinspires.ftc:Vision:10.2.0'
 }
 
 afterEvaluate {

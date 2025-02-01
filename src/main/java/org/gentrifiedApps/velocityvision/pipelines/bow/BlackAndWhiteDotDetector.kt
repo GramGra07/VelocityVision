@@ -7,7 +7,6 @@ import org.firstinspires.ftc.robotcore.external.function.Continuation
 import org.firstinspires.ftc.robotcore.external.stream.CameraStreamSource
 import org.firstinspires.ftc.robotcore.internal.camera.calibration.CameraCalibration
 import org.firstinspires.ftc.vision.VisionProcessor
-import org.gentrifiedApps.velocityvision.enums.DotColor
 import org.opencv.android.Utils
 import org.opencv.core.CvType
 import org.opencv.core.Mat

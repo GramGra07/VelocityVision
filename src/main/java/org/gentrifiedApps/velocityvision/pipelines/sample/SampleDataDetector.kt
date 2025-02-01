@@ -10,7 +10,6 @@ import org.firstinspires.ftc.robotcore.internal.camera.calibration.CameraCalibra
 import org.firstinspires.ftc.vision.VisionProcessor
 import org.gentrifiedApps.velocityvision.enums.Alliance
 import org.gentrifiedApps.velocityvision.enums.Color
-import org.gentrifiedApps.velocityvision.enums.ReturnType
 import org.gentrifiedApps.velocityvision.pipelines.sample.CameraLock.Companion.ofReturnables
 import org.opencv.android.Utils
 import org.opencv.core.Core
@@ -74,7 +73,7 @@ class SampleDataDetector (
             Imgproc.GaussianBlur(frame, blurred, Size(15.0, 15.0), 0.0)
 
             val hsv = Mat()
-            Imgproc.cvtColor(blurred, hsv, Imgproc.COLOR_BGR2HSV)
+            Imgproc.cvtColor(blurred, hsv, Imgproc.COLOR_RGB2HSV)
 
             val lowerBlue = Scalar(100.0, 150.0, 0.0)
             val upperBlue = Scalar(140.0, 255.0, 255.0)
@@ -82,8 +81,8 @@ class SampleDataDetector (
             val upperRed1 = Scalar(10.0, 255.0, 255.0)
             val lowerRed2 = Scalar(170.0, 150.0, 0.0)
             val upperRed2 = Scalar(180.0, 255.0, 255.0)
-            val lowerYellow = Scalar(20.0, 100.0, 100.0)
-            val upperYellow = Scalar(30.0, 255.0, 255.0)
+            val lowerYellow = Scalar(25.0, 100.0, 100.0)
+            val upperYellow = Scalar(70.0, 255.0, 255.0)
 
             val yellowMask = createMask(hsv, lowerYellow, upperYellow)
 
@@ -105,6 +104,7 @@ class SampleDataDetector (
             allContours.addAll(colorContours)
 
             if (allContours.isEmpty()) {
+                cameraLock = CameraLock.empty()
                 return arrayOf(MatOfPoint(), frame, intArrayOf(0, 0, 0, 0, 0))
             }
 
@@ -142,12 +142,14 @@ class SampleDataDetector (
 
             var angle = rect.angle
             angle = if (rect.size.width < rect.size.height) {
-                90 - abs(angle)
-            } else {
                 abs(angle)
+            } else {
+                90 - abs(angle)
             }
 
-// Determine color of the selected contour
+            val wrappedAngle = (-(56 / 90.0) * angle + 63).toInt()
+
+            // Determine color of the selected contour
             val mask = Mat.zeros(frame.size(), CvType.CV_8U)
             Imgproc.drawContours(mask, listOf(closestContour), 0, Scalar(255.0), -1)
 
@@ -157,14 +159,15 @@ class SampleDataDetector (
             Core.bitwise_and(mask, yellowMask, yellowAndMask)
             Core.bitwise_and(mask, colorMask, colorAndMask)
 
-            val selectedColor = if (Core.countNonZero(yellowAndMask) > Core.countNonZero(colorAndMask)) {
-                "yellow"
-            } else {
-                colorName
-            }
+            val selectedColor =
+                if (Core.countNonZero(yellowAndMask) > Core.countNonZero(colorAndMask)) {
+                    "yellow"
+                } else {
+                    colorName
+                }
 
             Imgproc.putText(
-                frame, "Angle: $angle°", Point(10.0, 30.0),
+                frame, "Angle: $wrappedAngle°", Point(10.0, 30.0),
                 Imgproc.FONT_HERSHEY_SIMPLEX, 0.7, Scalar(0.0, 255.0, 0.0), 2
             )
 
@@ -172,12 +175,6 @@ class SampleDataDetector (
                 frame, "CX: $cx, CY: $cy", Point(10.0, 90.0),
                 Imgproc.FONT_HERSHEY_SIMPLEX, 0.7, Scalar(0.0, 255.0, 0.0), 2
             )
-            val (colorOne, colorTwo) = when (selectedColor) {
-                "yellow" -> 1 to 1 // Yellow
-                "red" -> 0 to 1    // Red
-                "blue" -> 1 to 0   // Blue
-                else -> 0 to 0     // Default (unknown color)
-            }
 
             cameraLock = CameraLock(angle.toDouble(), selectedColor.toColor(), contourCenter)
             cameraLock.draw(frame)

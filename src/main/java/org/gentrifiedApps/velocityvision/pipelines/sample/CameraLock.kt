@@ -1,8 +1,6 @@
 package org.gentrifiedApps.velocityvision.pipelines.sample
 
-import android.graphics.Camera
 import org.gentrifiedApps.velocityvision.enums.Color
-import org.gentrifiedApps.velocityvision.enums.ReturnType
 import org.gentrifiedApps.velocityvision.extensions.Drawables.cross
 import org.opencv.core.Mat
 import org.opencv.core.Point
