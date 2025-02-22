@@ -14,9 +14,15 @@ class DetectionBuilder(
     override val name: String,
     override val scalarLow: Scalar,
     override val scalarHigh: Scalar,
-    private val function: Runnable,
+    private val function: Runnable?,
 ) : ObjectDetectionBuilder {
+    constructor(
+        rectangle: org.opencv.core.Rect,
+        name: String,
+        scalarLow: Scalar,
+        scalarHigh: Scalar,
+    ) : this(rectangle, name, scalarLow, scalarHigh, null)
     override fun execute() {
-        function.run()
+        function?.run()
     }
 }

@@ -25,6 +25,9 @@ class MeanColorOfAreaDetector(
     builder2: DetectionBuilder,
     assumption: AssumedBuilder
 ) : VisionProcessor, CameraStreamSource {
+    constructor(builder: DetectionBuilder, builder2: DetectionBuilder, assumption: AssumedBuilder) :
+            this(CSpace.RGB, builder, builder2, assumption)
+
 
     private val lastFrame = AtomicReference(Bitmap.createBitmap(1, 1, Bitmap.Config.RGB_565))
     private var colorSpaceMat = Mat()

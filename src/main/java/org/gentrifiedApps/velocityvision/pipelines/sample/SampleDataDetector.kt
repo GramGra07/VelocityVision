@@ -29,6 +29,10 @@ class SampleDataDetector (
     alliance: Alliance,
     ) : VisionProcessor,
         CameraStreamSource {
+    constructor(alliance: Alliance) : this(ReturnType.all(), alliance)
+    constructor() : this(Alliance.BLUE)
+    constructor(returnType: ReturnType) : this(listOf(returnType), Alliance.BLUE)
+
     private var isBlue: Boolean = (alliance == Alliance.BLUE)
         private var cameraLock: CameraLock = CameraLock.empty()
         private val lastFrame = AtomicReference(Bitmap.createBitmap(1, 1, Bitmap.Config.RGB_565))

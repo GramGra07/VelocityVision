@@ -21,6 +21,10 @@ class BlackAndWhiteDotDetector(
     dotColor: DotColor,
     builder: DotDetectionBuilder
 ) : VisionProcessor, CameraStreamSource {
+    constructor() : this(DotColor.WHITE, DotDetectionBuilder())
+    constructor(dotColor: DotColor) : this(dotColor, DotDetectionBuilder())
+    constructor(builder: DotDetectionBuilder) : this(DotColor.WHITE, builder)
+
     private val lastFrame = AtomicReference(Bitmap.createBitmap(1, 1, Bitmap.Config.RGB_565))
     private var submat = Mat()
     private var dotColor: DotColor

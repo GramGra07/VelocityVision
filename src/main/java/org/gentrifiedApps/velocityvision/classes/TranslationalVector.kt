@@ -10,6 +10,7 @@ data class TranslationalVector(
     val y: Double,
     val z: Double
 ){
+    constructor() : this(0.0, 0.0, 0.0)
     fun toPoint3(): org.opencv.core.Point3 {
         return org.opencv.core.Point3(x, y, z)
     }

@@ -9,4 +9,6 @@ data class RotationVector (
     var pitch: Double,
     var roll: Double,
     var yaw: Double
-)
+){
+    constructor() : this(0.0, 0.0, 0.0)
+}

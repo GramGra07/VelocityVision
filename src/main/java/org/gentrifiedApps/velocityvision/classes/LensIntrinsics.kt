@@ -5,4 +5,6 @@ data class LensIntrinsics(
     var fy: Double? = 0.0,
     var cx: Double? = 0.0,
     var cy: Double? = 0.0
-)
+){
+    constructor() : this(0.0, 0.0, 0.0, 0.0)
+}

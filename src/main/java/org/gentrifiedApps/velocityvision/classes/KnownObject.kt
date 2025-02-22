@@ -13,6 +13,7 @@ data class KnownObject (
     val position:Pose2D,
     val rotationVector: RotationVector = RotationVector(0.0, 0.0, 0.0)
 ){
+    constructor(size: Size3D, lowerScalar: Scalar, upperScalar: Scalar, position: Pose2D) : this(size, lowerScalar, upperScalar, position, RotationVector(0.0, 0.0, 0.0))
     fun toMat3f(): MatOfPoint3f {
         return MatOfPoint3f(
             Point3(size.width, size.height, size.length),

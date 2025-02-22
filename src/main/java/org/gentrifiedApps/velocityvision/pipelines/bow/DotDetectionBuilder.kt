@@ -6,4 +6,6 @@ class DotDetectionBuilder(
     override val rectangle: org.opencv.core.Rect,
     override val minArea: Double,
     override val maxArea: Double
-) : DotDetectionInterface
+) : DotDetectionInterface{
+    constructor() : this(org.opencv.core.Rect(), 0.0, 1000000.0)
+}
